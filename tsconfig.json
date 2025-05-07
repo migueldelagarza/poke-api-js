@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "moduleResolution": "node",
+    "lib": [
+      "es2020",
+      "dom"
+    ],
+  },
+  "include": [
+    "./src/app/ts/**/*"
+, ],
+  "exclude": [
+    "node_modules",
+    "./src/app/constants/**/*",
+    "./src/app/interfaces/**/*",
+  ]
+}
