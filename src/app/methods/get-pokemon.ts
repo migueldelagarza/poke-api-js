@@ -1,8 +1,9 @@
 import { API_POKEMON_ENDPOINT } from "../constants/enpoints";
 import { Pokemon } from "../interfaces/pokemon.interface";
+import { ApiResponse } from "../interfaces/api-response.interface";
 import UNDISCOVERED from "../constants/undiscoveredPokemon";
 
-export const getPokemon = async (id: number | string): Promise<{ success: boolean, data: Pokemon, error: Error | null }> => {
+export const getPokemon = async (id: number | string): Promise<ApiResponse> => {
   if (typeof id !== 'number' && typeof id !== 'string') {
     throw new Error('Invalid id type. Expected number or string.');
   }

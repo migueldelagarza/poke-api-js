@@ -1,12 +1,18 @@
 {
   "name": "@migueldelagarza/poke-api",
-  "version": "0.0.15-beta",
+  "version": "1.0.1",
   "description": "interfaces y métodos para consumir la PokeApi v2",
-  "main": "index.js",
+  "main": "./dist/app/app.js",
   "scripts": {
     "build": "tsc && mkdir -p dist/app/ts && cp -r src/app/interfaces/* dist/app/ts",
+    "pack-to-folder": "npm pack && mv $(ls *.tgz | head -n 1) ~/npm-packages/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "types": "./dist/app/app.d.ts",
   "keywords": [
     "pokemon",
     "api"
