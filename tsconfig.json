@@ -9,11 +9,11 @@
     ],
   },
   "include": [
-    "./src/app/ts/**/*"
+    "src/app/methods/**/*"
 , ],
   "exclude": [
     "node_modules",
-    "./src/app/constants/**/*",
-    "./src/app/interfaces/**/*",
+    "./src/app/constants/*",
+    "./src/app/interfaces/*",
   ]
 }

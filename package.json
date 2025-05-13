@@ -1,10 +1,10 @@
 {
   "name": "@migueldelagarza/poke-api",
-  "version": "0.0.10-beta",
+  "version": "0.0.15-beta",
   "description": "interfaces y métodos para consumir la PokeApi v2",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && mkdir -p dist/app/ts && cp -r src/app/interfaces/* dist/app/ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,8 +12,5 @@
     "api"
   ],
   "author": "Miguel de la Garza",
-  "license": "ISC",
-  "dependencies": {
-    "typescript": "^5.8.2"
-  }
+  "license": "ISC"
 }
